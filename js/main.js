@@ -58,7 +58,11 @@
 
     // slicknav
     $('.mobail-menu').slicknav({
-        prependTo:".menu"
+        prependTo: ".menu"
+    });
+
+    $(document).on('click', '.slicknav_nav a', function () {
+        $('.slicknav_btn').click();
     });
 
     // 2. Isotope Portfolio 
